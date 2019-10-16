@@ -1,0 +1,21 @@
+<form action="" class="col-md-4 offset-4 mt-5 mb-5 p-3 card card-body" #form="ngForm" (ngSubmit)="registerData(form)">
+  <h4 class="text-center bg-primary text-white p-2">Login Form</h4>
+  <div class="form-group">
+    <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email....." #email="ngModel" ngModel required minlength="6">
+    <div *ngIf="email.touched && email.invalid">
+      <p *ngIf="email.errors.required" class="alert alert-danger">This is required field.</p>
+      <p *ngIf="email.errors.minlength" class="alert alert-danger">Character must be greater than 6</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password....." #password="ngModel" ngModel required minlength="8">
+    <div *ngIf="password.touched && password.invalid">
+        <p *ngIf="password.errors.required" class="alert alert-danger">This is required field.</p>
+        <p *ngIf="password.errors.minlength" class="alert alert-danger">Character must be greater than 8</p>
+      </div>
+  </div>
+  <div class="form-group">
+      <button type="submit" class="btn btn-outline-success float-right" [disabled]="form.invalid">login</button>
+      <!-- form is template reference variable  -->
+  </div>
+</form>
