@@ -1,0 +1,90 @@
+
+<!-- Form-1 -->
+
+<div class="container">
+  <form action="" class="card card-body col-md-6 offset-3 mt-5 mb-5 p-3" #form="ngForm">
+    <h4 class="bg-success text-white text-center p-3 mb-4 card-header">Requirements</h4>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <input type="text" name="companyName" id="companyName" class="form-control" placeholder="Company name" #companyName="ngModel" ngModel required>
+          <div *ngIf="form.submitted || companyName.touched && companyName.invalid">
+            <p class="text-danger" *ngIf="companyName.errors.required">This is required field</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <select name="skills" id="skills" class="form-control" #skills="ngModel" ngModel required>
+              <option value="" selected disabled>Skills</option>
+            <option value="java">Java</option>
+            <option value="j2ee">J2ee</option>
+            <option value="angular">Angular</option>
+            <option value="spring">Spring</option>
+          </select>
+          <div *ngIf="form.submitted && skills.invalid">
+              <p class="text-danger" *ngIf="skills.errors.required">This is required field</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <select name="exp" id="exp" class="form-control" #exp="ngModel" ngModel required>
+              <option value="" selected disabled>Experience</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <div *ngIf="form.submitted && exp.invalid">
+                <p class="text-danger" *ngIf="exp.errors.required">This is required field</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" name="mctc" id="mctc" class="form-control" placeholder="MCTC" #mctc="ngModel" ngModel required>
+              <div *ngIf="form.submitted || mctc.touched && mctc.invalid">
+                  <p class="text-danger" *ngIf="mctc.errors.required">This is required field</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"> 
+              <div class="form-group">
+                <select name="location" id="location" class="form-control" #location="ngModel" ngModel required>
+                  <option value="" selected disabled>Location</option>
+                  <option value="Bengaluru">Bengaluru</option>
+                  <option value="Pune">Pune</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Delhi">Delhi</option>
+                </select>
+                <div *ngIf="form.submitted && location.invalid">
+                    <p class="text-danger" *ngIf="location.errors.required">This is required field</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4 offset-4">
+                <div class="form-group">
+                  <input type="submit" class="form-control btn btn-outline-success" value="Add Requirements">
+                </div>
+              </div>
+            </div>
+  </form>
+
+  
+    
+  
+</div>
+
+
+

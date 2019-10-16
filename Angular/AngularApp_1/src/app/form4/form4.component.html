@@ -1,0 +1,40 @@
+<div class="container">
+  <!-- Form-3 -->
+
+  <form action="" class=" card card-body col-md-6 offset-3 mt-5 mb-5" #form3="ngForm">
+    <h4 class="bg-success text-white text-center p-2 mb-3">Add User</h4>
+    <div class="form-group">
+      <input type="text" name="poductName" id="poductName" class="form-control" #poductName="ngModel" ngModel
+        placeholder="Product name" required>
+      <div *ngIf="form3.submitted || poductName.touched && poductName.invalid">
+        <p class="text-danger" *ngIf="poductName.errors.required">This is required field</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="number" name="productPrice" id="productPrice" class="form-control" #productPrice="ngModel" ngModel
+        placeholder="Product price" required>
+      <div *ngIf="form3.submitted || productPrice.touched && productPrice.invalid">
+        <p class="text-danger" *ngIf="productPrice.errors.required">This is required field</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <input type="text" name="productDesc" id="productDesc" class="form-control mt-2" placeholder="Product description" #productDesc="ngModel" ngModel
+        required>
+      <div *ngIf="form3.submitted || productDesc.touched && productDesc.invalid">
+        <p class="text-danger" *ngIf="productDesc.errors.required">This is required field</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="url" name="imgUrl" id="imgUrl" class="form-control mt-2" placeholder="Imgage URL"
+        #imgUrl="ngModel" ngModel required>
+      <div *ngIf="form3.submitted || imgUrl.touched && imgUrl.invalid">
+        <p class="text-danger" *ngIf="imgUrl.errors.required">This is required field</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Add product" class="form-control btn btn-outline-success offset-4 col-md-4">
+    </div>
+  </form>
+
+</div>

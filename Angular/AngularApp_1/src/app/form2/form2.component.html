@@ -1,0 +1,64 @@
+<div class="container">
+  <!-- Form-2 -->
+
+  <form action="" class="card card-body col-md-6 offset-3 mt-5 mb-5" #form="ngForm">
+    <h4 class="bg-success text-white text-center p-2 mb-3">Shedule Interview</h4>
+    <div class="form-group">
+      <input type="text" name="name" id="name" class="form-control" #name="ngModel" ngModel
+        placeholder="Candidate name" required>
+      <div *ngIf="form3.submitted || name.touched && name.invalid">
+        <p class="text-danger" *ngIf="name.errors.required">This is required field</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <select name="exp" id="exp" class="form-control" #exp="ngModel" ngModel required>
+        <option selected>Experience</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <div *ngIf="form.submitted && exp.invalid">
+        <p class="text-danger" *ngIf="exp.errors.required">This is required field</p>
+      </div>
+    </div>
+    <div class="row col-md-6">
+      <label for="check">Skills</label>
+    </div>
+    <div class="form-check form-check-inline" id="check">
+      <input class="form-check-input" type="checkbox" name="java" id="java" value="java">
+      <label class="form-check-label" for="java">Java</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" name="angular" id="angular" value="angular">
+      <label class="form-check-label" for="angular">Angular</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" name="sql" id="sql" value="sql">
+      <label class="form-check-label" for="sql">SQL</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" name="spring" id="spring" value="spring">
+      <label class="form-check-label" for="spring">Spring</label>
+    </div>
+    <div class="form-group">
+      <input type="number" name="cctc" id="cctc" class="form-control mt-2" placeholder="CCTC" #cctc="ngModel" ngModel
+        required>
+      <div *ngIf="form.submitted || cctc.touched && cctc.invalid">
+        <p class="text-danger" *ngIf="cctc.errors.required">This is required field</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="number" name="ectc" id="ectc" class="form-control mt-2" placeholder="ECTC" #cctc="ngModel" ngModel
+        required>
+      <div *ngIf="form.submitted || ectc.touched && ectc.invalid">
+        <p class="text-danger" *ngIf="ectc.errors.required">This is required field</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Shedule Interview" class="form-control btn btn-outline-success offset-4 col-md-4">
+    </div>
+  </form>
+
+
+</div>

@@ -1,0 +1,69 @@
+<div class="container">
+  <!-- Form-3 -->
+
+  <form action="" class=" card card-body col-md-6 offset-3 mt-5 mb-5" #form3="ngForm">
+    <h4 class="bg-success text-white text-center p-2 mb-3">Add User</h4>
+    <div class="form-group">
+      <input type="text" name="userName" id="userName" class="form-control" #userName="ngModel" ngModel
+        placeholder="User name" required>
+      <div *ngIf="form3.submitted || userName.touched && userName.invalid">
+        <p class="text-danger" *ngIf="userName.errors.required">This is required field</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="text" name="age" id="age" class="form-control" #age="ngModel" ngModel placeholder="User Age"
+        required>
+      <div *ngIf="form3.submitted || age.touched && age.invalid">
+        <p class="text-danger" *ngIf="age.errors.required">This is required field</p> 
+      </div>
+    </div>
+    <div class="row col-md-6">
+      <label for="check">Gender</label>
+    </div>
+    <div class="form-check form-check-inline" id="check">
+      <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+      <label class="form-check-label" for="male">Male</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+      <label class="form-check-label" for="female">Female</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+      <label class="form-check-label" for="other">Others</label>
+    </div>
+
+    <div class="form-group">
+      <input type="email" name="email" id="email" class="form-control mt-2" placeholder="Email" #email="ngModel" ngModel
+        required>
+      <div *ngIf="form3.submitted || email.touched && email.invalid">
+        <p class="text-danger" *ngIf="email.errors.required">This is required field</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="tel" name="mobile" id="mobile" class="form-control mt-2" placeholder="Contact" #mobile="ngModel" ngModel
+        required>
+      <div *ngIf="form3.submitted || mobile.touched && mobile.invalid">
+        <p class="text-danger" *ngIf="mobile.errors.required">This is required field</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="password" name="password" id="password" class="form-control mt-2" placeholder="Password" #password="ngModel" ngModel
+        required>
+      <div *ngIf="form3.submitted || password.touched && password.invalid">
+        <p class="text-danger" *ngIf="password.errors.required">This is required field</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="password" name="repassword" id="repassword" class="form-control mt-2" placeholder="Re-enter password" #repassword="ngModel" ngModel
+        required>
+      <div *ngIf="form3.submitted || repassword.touched && repassword.invalid">
+        <p class="text-danger" *ngIf="repassword.errors.required">This is required field</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Shedule Interview" class="form-control btn btn-outline-success offset-4 col-md-4">
+    </div>
+  </form>
+
+</div>

@@ -1,0 +1,49 @@
+<!-- property binding -->
+<h1 [innerText]="name"></h1>
+<img [src]="imgUrl" alt="" style="background-size: cover" [class.rounded-circle]="isActive">
+
+<!-- Angular interpolation -->
+<h1>{{address}}</h1>  
+
+<!-- Style binding -->
+<h1 [style.color]="colorName">{{address}}</h1>
+
+<!-- Class Binding -->
+<h1 [style.color]="colorName" [class.bg-dark]="isActive" [class.bg-primary]="!isActive">{{address}}</h1>
+
+<!-- Attribute binding -->
+<table class="table table-dark table-bordered table-striped text-center">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th [attr.colspan]="colSpanValue">Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rahul</td>
+      <td>23</td>
+      <td>646846546</td>
+      <td>654654454</td>
+    </tr>
+    <tr>
+      <td>Rahul</td>
+      <td>23</td>
+      <td>646846546</td>
+      <td>654654454</td>
+    </tr>
+    <tr>
+      <td>Rahul</td>
+      <td>23</td>
+      <td>646846546</td>
+      <td>654654454</td>
+    </tr>
+    <tr>
+      <td>Rahul</td>
+      <td>23</td>
+      <td>646846546</td>
+      <td>654654454</td>
+    </tr>
+  </tbody>
+</table>

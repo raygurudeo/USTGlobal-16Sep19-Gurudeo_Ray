@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javasript</title>
+    <script>
+        var age=22;
+        console.log('Age = '+age);
+        var name=`Raj`;
+        console.log('Name is : '+name);
+        var hasHobbies=true;
+        console.log('Has Hobbies : '+hasHobbies);
+        var data = null;
+        console.log('Data = '+data);
+        var married;
+        console.log('Married : '+married);
+    </script>
+</head>
+<body>
+    <script>
+        var fruits=['Mango','Banana'];                      //Array Eg.
+        console.log('Fruits = ',fruits);
+        console.log('Fruits1  = ',fruits[0]);
+        console.log('Fruits2 = ',fruits[1]);
+        console.log('Fruits lengths = '+fruits.length);
+
+        var person={                                        // Object Example
+            name : 'Rahul',
+            age : 26,
+            phoneNo : 99955544,
+            getFullName : function(){
+                return this.name;
+            }
+        }
+        console.log(person.name);
+        var name=person.getFullName();
+        console.log(name);
+    </script>
+</body>
+</html>
