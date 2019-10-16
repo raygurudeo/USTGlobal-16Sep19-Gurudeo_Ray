@@ -1,0 +1,78 @@
+form{
+    box-shadow: 0 0 20px black;
+    width: 250px;
+    height: 350px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    font-family: cursive;
+    color: forestgreen;
+    background-color: hsl(0, 0%, 88%,0.5);
+}
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
+  }
+  #check-box {
+    float: right;
+    margin-left: -25px;
+    margin-top: -10px;
+    z-index: 2;
+    position: relative;
+  }
+table,tr,th,input{
+    padding: 4px;
+}
+label{
+    font-size: 20px;
+}
+input[type='text'], input[type='password']{
+   padding: 8px;
+   box-shadow: 0 0 5px black;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   background-color: transparent;
+   width: 220px;
+}
+input[type='submit']{
+    padding: 8px 20px;
+    margin-top: 0px;
+    font-size: 18px;
+    box-shadow: 0 0 5px black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: forestgreen;
+    font-family: cursive;
+}
+body{
+    background: url(../image/image3.jpeg);
+    background-size: cover;
+    
+}
+input[type='submit']:hover{
+    padding: 10px 22px;
+    font-size: 17px;
+    background-color: green;
+    color: white;
+}
+input[type='password']:hover, input[type='text']:hover{
+    padding: 10px;
+}
+#userName, #password-field {
+    margin-bottom: 0px;
+}
+#password-label, #username-label {
+    margin-top: 0px;
+    clear: both;
+    font-size: 11px;
+    color: red;
+}
+
+

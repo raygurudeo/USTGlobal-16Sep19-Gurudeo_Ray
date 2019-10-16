@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Black+Han+Sans|Fjalla+One|Lobster|Nunito|Roboto|Rubik|Ubuntu|Sedgwick+Ave|Exo+2|Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css_animation/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+        <form>
+    <table>
+        
+            <h1 style="text-align: center;">Login Here</h1>
+            <tr>
+                <td><label for="userName">Username</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="userName" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+            </tr>
+            <tr>
+                <td><input type="password" id="password-field" required>
+                    <span id="toggle-pwd" toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                    <input type="checkbox" id="check-box">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Login"></td>
+            </tr>
+        
+        </table>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>

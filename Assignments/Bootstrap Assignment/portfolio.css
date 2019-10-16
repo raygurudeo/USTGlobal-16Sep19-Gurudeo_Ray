@@ -1,0 +1,157 @@
+/* ----Body----- */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ------Navbar------- */
+
+#main-navbar {
+    background-color: black;
+}
+#simpleNavbar a{
+    color: white;
+    margin: 40px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* ------Main Section---- */
+#main-section {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    margin-top: 100px;
+    box-shadow: 0 0 20px grey;
+}
+#main-section img{
+    height: 400px;
+    width: 410px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px black;
+}
+#main-section div{
+    /* display: inline-block; */
+    /* border: 1px solid black; */
+    padding: 5px;
+    height: 500px;
+}
+#main-left-section {
+    margin-left: 20px;
+    width:500px
+}
+#main-right-section {
+    margin-right: 20px;
+    width: 740px;
+    margin-left: 10px;
+}
+#main-right-section p{
+    font-size: 18px;
+    color: gray;
+    
+}
+#main-right-section input {
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 20px 80px;
+    font-size: 22px;
+    box-shadow: 0 0 7px black;
+}
+
+/* ------Middle Division------ */
+
+#middle-div{
+    margin-top: 630px;
+    /* background-color: black; */
+    box-shadow: 0 0 20px grey;
+}
+#middle-div p{
+    font-size: 18px;
+    color: gray;
+}
+#middle-div-header {
+    margin-top: 50px;
+}
+#card {
+    box-shadow: 8px 8px 5px grey;
+}
+#main-div-footer p{
+    font-size: 22px;
+}
+#main-div-footer input {
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 20px 80px;
+    font-size: 22px;
+    box-shadow: 0 0 7px black;
+}
+
+/* -------Gallery part------- */
+
+#gallery-div {
+    /* border: 1px solid black; */
+    margin-bottom: 100px;
+    /* box-shadow:  0 5px grey; */
+}
+#gallery-div p{
+    font-size: 22px;
+}
+#gallery-div img {
+    width: 100%;
+    /* background-size: inherit; */
+}
+#gallery-section-2 {
+    margin-top: 70px;
+}
+.box-shadow {
+    box-shadow: 3px 3px 10px grey;
+}
+
+/*--------- Footer section------- */
+
+#footer-div {
+    /* border: 1px solid red; */
+    margin-left: -40px;
+    margin-right: 0px;
+    margin-bottom: -50px;
+    width: 1370px;
+    background-color: black;
+}
+#footer-div  input {
+    /* background-color: gray; */
+    background: transparent;
+    background-color: hsla(210, 4%, 46%, 0.5);
+    border: none;
+    padding: 15px;
+}
+#footer-div  textarea {
+    /* background-color: gray; */
+    background: transparent;
+    background-color: hsla(210, 4%, 46%, 0.5);
+    border: none;
+}
+#footer-div button{
+    /* padding: 40px 30px; */
+    text-align: center;
+    font-size: 18px;
+    height: 70px;
+    width: 250px;
+    outline: none;
+    border: none;
+}
+#footer-div button[type='reset'] {
+    background: transparent;
+    color: white;
+    background-color: hsla(210, 4%, 46%, 0.5);
+    border: none;
+}
+#social-media a{
+    margin: 10px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+#footer-div p{
+    font-size: 18px;
+}
