@@ -1,0 +1,10 @@
+package com.ustglobal.thread.properties;
+
+public class MyIdThread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

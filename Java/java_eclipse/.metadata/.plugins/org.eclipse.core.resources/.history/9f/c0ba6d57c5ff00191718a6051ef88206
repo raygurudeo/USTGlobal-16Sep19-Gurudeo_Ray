@@ -1,0 +1,15 @@
+package com.ustglobal.streams.list;
+
+import java.util.ArrayList;
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+
+		ArrayList<Employee> al = new ArrayList<Employee>();
+		Employee e1 = new Employee(10, "Rahul");
+		Employee e2 = new Employee(12, "Raja");
+		Employee e3 = new Employee(7, "Sonu");
+	}
+
+}

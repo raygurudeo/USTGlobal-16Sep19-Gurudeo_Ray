@@ -1,0 +1,19 @@
+package com.ustglobal.maps;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+
+		Student s1 = new Student(101, "Dhoni", 65.5);
+		Student s2 = new Student(100, "Michel", 55.5);
+		Student s3 = new Student(103, "Mike", 68.8);
+		Student s4 = new Student(102, "Sachin", 75.5);
+		Student s5 = new Student(104, "Virat", 35.5);
+		Student s6 = new Student(106, "Hussey", 58.8);
+		Student s7 = new Student(105, "Kane", 35.5);
+		Student s8 = new Student(108, "Brendom", 95.5);
+		Student s9 = new Student(107, "James", 68.7);
+		
+	}
+
+}

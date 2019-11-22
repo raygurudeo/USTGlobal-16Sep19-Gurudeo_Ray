@@ -1,0 +1,17 @@
+package com.ustglobal.java8features;
+
+import java.util.ArrayList;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+
+		ArrayList<Student> al = new ArrayList<Student>();
+		al.add(new Student(15, "Mike", 45.5));
+		al.add(new Student(10, "Rahul", 32.5));
+		al.add(new Student(12, "Virat", 88.2));
+		al.add(new Student(21, "Aryan", 57));
+		al.add(new Student(18, "Pankaj", 33));
+	}
+
+}

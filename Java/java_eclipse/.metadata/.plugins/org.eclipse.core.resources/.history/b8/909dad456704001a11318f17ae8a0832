@@ -1,0 +1,18 @@
+package com.ustglobal.thread.pausing;
+
+public class MyJoinThreadTest {
+
+	public static void main(String[] args) {
+
+		MyJoinThread mjt = new MyJoinThread();
+		try {
+			
+			mjt.join();
+			
+		} catch (InterruptedException e) {
+
+			e.printStackTrace();
+		}
+	}
+
+}

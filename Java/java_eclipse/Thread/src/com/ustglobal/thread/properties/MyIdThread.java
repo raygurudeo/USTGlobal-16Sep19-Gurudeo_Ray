@@ -1,0 +1,25 @@
+package com.ustglobal.thread.properties;
+
+public class MyIdThread extends Thread {
+
+	public static void main(String[] args) {
+
+		System.out.println("Main started");
+		
+		System.out.println("Current thread id : "+Thread.currentThread().getId());
+		
+		MyIdThread mit = new MyIdThread();
+		System.out.println("MyIdThread id : "+mit.getId());
+		
+//		mit.setId(1);	 we can not set id only get
+		System.out.println("Priority : "+Thread.currentThread().getId());
+		
+		/*
+		 * Thread.currentThread().setPriority(15); Priority should b/w only 1 to 10 ->>
+		 * IllegalArgumentException
+		 */
+		
+		System.out.println("Main ended");
+	}
+
+}

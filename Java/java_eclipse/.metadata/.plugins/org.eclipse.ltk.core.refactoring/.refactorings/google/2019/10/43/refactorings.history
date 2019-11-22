@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.ustgloblel.googlelogin&apos; to &apos;com.ustglobel.googlelogin&apos;&#x0D;&#x0A;- Original project: &apos;google&apos;&#x0D;&#x0A;- Original element: &apos;google/src/com.ustgloblel.googlelogin&apos;&#x0D;&#x0A;- Renamed element: &apos;google/src/com.ustglobel.googlelogin&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.ustgloblel.googlelogin&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.ustgloblel.googlelogin" name="com.ustglobel.googlelogin" qualified="false" references="true" stamp="1571985177938" textual="false" version="1.0"/>
+</session>

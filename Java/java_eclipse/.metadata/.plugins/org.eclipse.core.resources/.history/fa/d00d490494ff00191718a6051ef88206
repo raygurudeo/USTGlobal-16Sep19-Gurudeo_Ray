@@ -1,0 +1,26 @@
+package com.ustglobal.maps;
+
+import java.util.HashMap;
+
+public class TestB {
+
+	public static void main(String[] args) {
+
+		HashMap hm = new HashMap();
+		hm.put("Kuku", 9867);
+		hm.put("Mala", 8579);
+		hm.put("Sheela", 7896);
+		
+		HashMap hm1 = new HashMap();
+		hm1.put("Deepu", 8867);
+		hm1.put("Riya", 9579);
+		hm1.put("Kriti", 8896);
+		
+		boolean b = hm.containsKey("Mala");		// returns key present or not
+		System.out.println("Has key : "+b);
+		
+		boolean hasValue = hm.containsValue("8579");
+		System.out.println("Has value : "+hasValue);
+	}
+
+}

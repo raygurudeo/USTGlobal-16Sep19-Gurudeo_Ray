@@ -1,0 +1,18 @@
+package com.ustglobal.java8features;
+
+import java.util.function.Predicate;
+
+public class TestA {
+
+	public static void main(String[] args) {
+
+		Predicate<Integer> p = i -> {
+			
+			return i%2 == 0;
+		};
+		
+		boolean b = p.test(11);			// Its a method in predicate functional interface
+		System.out.println("Result : "+b);
+	}
+
+}

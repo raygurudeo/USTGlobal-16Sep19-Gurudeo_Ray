@@ -1,0 +1,17 @@
+package com.ustglobal.java8features.predicate;
+
+import java.util.function.Predicate;
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+
+		Employee e = new Employee(101, "Raj", "Software developer");
+		Predicate<Employee> p = emp -> {
+			
+			return (emp.designation == "software developer")?true:false;
+		};
+		p.test(e);
+	}
+
+}
