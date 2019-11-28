@@ -1,0 +1,10 @@
+package com.ustglobal.springcore.config;
+
+import com.ustglobal.springcore.di.Hello;
+
+public class ConfigurationClass {
+
+	public Hello getHello() {
+		return new Hello();
+	}
+}

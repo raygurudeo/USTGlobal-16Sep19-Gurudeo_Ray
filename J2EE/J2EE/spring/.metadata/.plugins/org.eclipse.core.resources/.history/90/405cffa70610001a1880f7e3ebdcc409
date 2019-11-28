@@ -1,0 +1,10 @@
+package com.ustglobal.didemo.util;
+
+import com.ustglobal.didemo.dao.I;
+
+public class DiManager {
+
+	public void I getI() {
+		return new A();
+	}
+}
